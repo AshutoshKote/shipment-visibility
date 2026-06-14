@@ -1,0 +1,11 @@
+python monitoring/drift_monitor.py
+[drift] reference rows: 42,628 | live predictions: 1,000
+
+feature                  PSI   status
+------------------------------------------------
+dist_remaining_km      0.136   moderate shift
+speed_kmh              0.115   moderate shift
+
+[drift] prediction methods: {'model': 1000}
+
+>>> inputs stable vs training distribution -> no retrain needed
